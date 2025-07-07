@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WISEROBOTICS Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Student name input before quiz -->
+  <div id="start-screen">
+    <h2>Enter Your Name</h2>
+    <input type="text" id="student-name" placeholder="e.g., Ama Kwame" />
+    <br><br>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Timer -->
+  <div id="timer" class="hidden">
+    Time Left: <span id="time-remaining">35:00</span>
+  </div>
+
+  <!-- Main quiz container -->
+  <div class="container" style="display: none">
+    <h1>🤖 WISEROBOTICS End of Term Quiz</h1>
+    <div id="quiz-box">
+      <div id="question"></div>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Your Score: <span id="score"></span>%</h2>
+      <h3 id="badge"></h3>
+      <audio id="success-audio" src="success.mp3"></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

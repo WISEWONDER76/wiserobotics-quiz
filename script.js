@@ -1,4 +1,4 @@
-let quizTime = 15 * 60; // 15 minutes in seconds
+let quizTime = 50 * 60; // 15 minutes in seconds
 let timerInterval;
 let currentQ = 0;
 let score = 0;
